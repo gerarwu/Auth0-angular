@@ -1,5 +1,7 @@
 # Auth0Angular
 
+This project is an example to make LogIn using [Auth0](https://auth0.com/) API.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server
