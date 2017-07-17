@@ -7,6 +7,9 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { MiembrosComponent } from './components/miembros/miembros.component';
 
+// services 
+import { Auth0Service } from './services/autho.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,7 @@ import { MiembrosComponent } from './components/miembros/miembros.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [Auth0Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

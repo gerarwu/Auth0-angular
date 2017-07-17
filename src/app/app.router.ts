@@ -11,8 +11,6 @@ const ROUTES : Routes = [
     { path : '**', component:InicioComponent}
 ];
 
-
-
 @NgModule({
     imports: [
         RouterModule.forRoot( ROUTES )
