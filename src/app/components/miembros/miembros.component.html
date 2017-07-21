@@ -1,0 +1,23 @@
+<div class="row">       
+    <p>Seccion para los usuarios registrados</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <img [src]="profile?.picture" class="img-fluid" alt="">
+    </div>
+    <div class="col-sm-4">
+        <ul class="list-group">
+            <li class="list-group-item">{{profile?.name}}</li>
+            <li class="list-group-item">{{profile?.gender}}</li>
+            <li class="list-group-item">{{profile?.nickname}}</li>
+        </ul>
+    </div>
+</div> 
+
+<br>
+
+<p>Login data</p>
+<pre>
+    {{profile | json}}
+</pre>

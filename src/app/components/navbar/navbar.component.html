@@ -14,14 +14,14 @@
         <a class="nav-link"  [routerLink]="['catalogo']"> Catalogo </a>
       </li>
 
-      <li class="nav-item" [routerLinkActive]="['active']">
+      <li class="nav-item" *ngIf="auth0Service.isAuthenticated()" [routerLinkActive]="['active']">
         <a class="nav-link" [routerLink]="['miembros']"> Miembros </a>
       </li>
 
     </ul>
     <span class="navbar-text">
-      <button class="btn btn-primary" *ngIf="!auth0Service.isAuthenticated()" (click)="login()"> Log In </button>
-      <button class="btn btn-primary" *ngIf="auth0Service.isAuthenticated()" (click)="logout()"> Log Out </button>
+      <button class="btn btn-primary btn-sm" *ngIf="!auth0Service.isAuthenticated()" (click)="login()"> Log In </button>
+      <button class="btn btn-primary btn-sm" *ngIf="auth0Service.isAuthenticated()" (click)="logout()"> Log Out </button>
       Ejemplo de AuthO con Angular
     </span>
   </div>
